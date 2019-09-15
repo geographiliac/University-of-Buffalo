@@ -27,7 +27,8 @@ In this tutorial you will:
 
 ## Uploading and editing datasets to Mapbox
 
-You can use the Mapbox Studio [dataset editor](https://studio.mapbox.com/datasets/) to import, create, and edit point, line, and polygon features and their properties. A collection of these features in Mapbox is called a [dataset](https://docs.mapbox.com/help/glossary/dataset/). Datasets can either be downloaded as GeoJSON or exported to tilesets for use in Mapbox styles (see the [Introduction](https://docs.mapbox.com/studio-manual/overview/) section for more information). 
+You can use the Mapbox Studio [dataset editor](https://studio.mapbox.com/datasets/) to import, 
+e, and edit point, line, and polygon features and their properties. A collection of these features in Mapbox is called a [dataset](https://docs.mapbox.com/help/glossary/dataset/). Datasets can either be downloaded as GeoJSON or exported to tilesets for use in Mapbox styles (see the [Introduction](https://docs.mapbox.com/studio-manual/overview/) section for more information). 
 
 ## [What is a dataset?](https://docs.mapbox.com/studio-manual/reference/datasets/#what-is-a-dataset)
 
@@ -85,7 +86,7 @@ Repeat these steps for each council district.
 
 Once you are finished, select __save__ and return to the [dataset editor homepage](https://studio.mapbox.com/datasets/).
 
-Our final map for this tutorial is going to be a graduated point map of rodent incidence rates by council district. In order to creat this map, we will need to create centroid points for each of the polygon features. We will use QGIS to create the centroid points. 
+Our final map for this tutorial is going to be a graduated point map of rodent incidence rates by council district. In order to create this map, we will need to create centroid points for each of the polygon features. We will use QGIS to create the centroid points. 
 
 Download your edited dataset as a GeoJSON by clicking on the <img src="https://github.com/mjdanielson/University-of-Buffalo/blob/master/Labs/Graduated-Points/Images/Symbol.png"> button and selecting download. 
 
@@ -105,7 +106,7 @@ Use the __Processing Toolbox__ search bar to find the Vector geometry __Centroid
 
 Right click on the layer and select __Export__ --> __Save Feature As__ and export your file as a GeoJSON. 
 
-We have now successfully created a point feature from our polygon file! There is still one more pre-processing step that we need to do before we can style our data in Mapbox Studio. A common error that occurs when uploading GeoJSON data to Mapbox is that the GeoJSON contains an old-style CRS attribute. To prevent this error, open your GeoJSON in a text editor (for this example, we will be using Atom). Delete the CRS attribute from your code and save your edits. For more information about common data uploading errors check out this helpful [documentation](https://docs.mapbox.com/help/troubleshooting/uploads/).
+We have now successfully created a point feature from our polygon file! There is still one more pre-processing step that we need to do before we can style our data in Mapbox Studio. A common error that occurs when uploading GeoJSON data to Mapbox is that the GeoJSON contains an old-style CRS attribute. To prevent this error, open your GeoJSON in a text editor (for this example, we will be using Brackets). Delete the CRS attribute from your code and save your edits. For more information about common data uploading errors check out this helpful [documentation](https://docs.mapbox.com/help/troubleshooting/uploads/).
 
 <p align = "center">
   <img src="https://github.com/mjdanielson/University-of-Buffalo/blob/master/Labs/Graduated-Points/Images/Text_Editing.png" title="Text Editing">
@@ -133,6 +134,7 @@ Next, we will create a tileset from an existing dataset. Again, navigate to the 
 
 When you upload vector data to your Mapbox account, our servers convert it to a [vector tileset](https://docs.mapbox.com/help/glossary/tileset/) so it can be rendered quickly and efficiently in the Mapbox Studio style editor and with Mapbox GL JS. The tileset information page shows some useful information about the tileset that was created from your uploaded data. Feel free to explore the information page for each of your new tilesets. 
 
+You can now view the centroids of each district’s polygon on your basemap.
 
   ## Create a style for a basemap
   
@@ -140,7 +142,7 @@ After you've inspected your data, it's time to create a new style so you can put
 
 Excellent! Welcome to the Mapbox Studio style editor. This is where you will create your map style!
 
-Rename the style so that you can find it later. Click into the title field in the upper left side of the screen to change the title from Basic Template to __Graduated_Points__.  <img src="https://github.com/mjdanielson/University-of-Buffalo/blob/master/Labs/Graduated-Points/Images/New_Style.png" width="82" height="26" title="New Style"> button. Find the Basic Template style and click 
+Rename the style so that you can find it later. Click into the title field in the upper left side of the screen to change the title from Light to __Graduated_Points__.  <img src="https://github.com/mjdanielson/University-of-Buffalo/blob/master/Labs/Graduated-Points/Images/New_Style.png" width="82" height="26" title="New Style"> button. Find the Light style and click 
 
 <p align="center">
   <img src="https://github.com/mjdanielson/University-of-Buffalo/blob/master/Labs/Graduated-Points/Images/Rename.png" title="Rename"> 
@@ -188,6 +190,8 @@ Change the color of the layer to 'no color' and adjust the opacity to 75%.
   <img src = "https://github.com/mjdanielson/University-of-Buffalo/blob/master/Labs/Graduated-Points/Images/Boundary_Layer.png" title = 'boundary layer settings'>
 </p>
 
+To get the 1px black stroke, the color of the stroke must be #000000.
+
 
 ## Publish your style 
 
@@ -201,7 +205,7 @@ You can use your ‘Share URL’ to open your style in a new browser tab and sha
 
 Now that we have edited our layers and created a style, let's create a web map! 
 
-For this part of the lesson, we will be using a program called JSFiddle. You can sign up for a free acount at: https://jsfiddle.net/
+For this part of the lesson, we will be using a program called JSFiddle. You can sign up for a free acount at: https://jsfiddle.net/user/signup/
 
 JSFiddle is a simple tool for building and testing code for web development. We recommend using JSFiddle in a Chrome browser
 
