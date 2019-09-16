@@ -249,3 +249,5 @@ Copy the text from your JSFiddle.
 In Brackets (text editor), go to file->new, and then paste in the text from JSFiddle.
 
 Save this document as propsymbols.html to your working folder.  
+
+[Find your project1.html file and paste and embed propsymbols.html as an iframe.](https://docs.google.com/document/d/1NjZm568NuXXKJdphQzkpkixM_YEGXZrThmiOM9hbRI0/edit?usp=sharing)
