@@ -244,6 +244,8 @@ Click ‘Run’ to see the changes to your map.
 
 Save your JSFiddle. 
 
+## Embedding your map
+
 Copy the text from your JSFiddle.
 
 In Brackets (text editor), go to file->new, and then paste in the text from JSFiddle.
