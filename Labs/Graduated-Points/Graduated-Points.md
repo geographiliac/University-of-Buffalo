@@ -248,10 +248,4 @@ Copy the text from your JSFiddle.
 
 In Brackets (text editor), go to file->new, and then paste in the text from JSFiddle.
 
-Save this document as propsymbols.html to your working folder
-
-Find the subpage of your website (project1.html) that you created when you created your website.
-
-Add in a <div> in the body of your page and create an <iframe> and link to the propsymbols.html document you just created.  The propsymbols.html must be in the same folder.  Here is info on creating an iframe https://www.tutorialrepublic.com/html-tutorial/html-iframes.php
-  
-Save this and put both html files in your public_html folder.
+Save this document as propsymbols.html to your working folder.  
